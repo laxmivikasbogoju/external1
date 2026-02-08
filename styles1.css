@@ -17,6 +17,7 @@
             box-sizing: border-box;
         }
         .logo img {
+            display: flex;
             height: 38px;
         }   
         body {

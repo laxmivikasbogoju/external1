@@ -1,4 +1,3 @@
- // Mobile Menu Toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('navLinks');
         
@@ -7,7 +6,6 @@
             navLinks.classList.toggle('active');
         });
 
-        // Close mobile menu when clicking on a link
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 hamburger.classList.remove('active');
@@ -15,7 +13,6 @@
             });
         });
 
-        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -33,7 +30,6 @@
             });
         });
 
-        // Header Scroll Effect
         const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -43,7 +39,6 @@
             }
         });
 
-        // Form Validation
         const form = document.getElementById('contactForm');
         const successMessage = document.getElementById('successMessage');
 
