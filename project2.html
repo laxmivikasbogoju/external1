@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles1.css" />
-    <link rel="script" href="script.js" />
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <!-- Header -->
@@ -19,8 +18,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#Services">Services</a></li>
-                <li><a href="#sustainability">Sustainability</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#Sustainability">Sustainability</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -145,10 +144,10 @@
     <section id="contact">
         <div class="section-header">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's discuss your discrepancies towards us. </p>
+            <p class="section-subtitle">Let's discuss your next project</p>
         </div>
         <div class="contact-container">
-            <form id="contactForm">
+            <form id="contactForm" novalidate>
                 <div class="form-group">
                     <label for="name">Full Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -171,9 +170,15 @@
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
                 <div class="success-message" id="successMessage">
-                    Thank you! Your message has been sent successfully.
+                    ✓ Thank you! Your message has been saved successfully.
                 </div>
             </form>
+
+            <div class="storage-info">
+                <h4>📦 LocalStorage Info</h4>
+                <p>Total submissions stored: <span class="storage-count" id="storageCount">0</span></p>
+                <p style="font-size: 0.85rem; margin-top: 1rem;">💡 Open DevTools → Application → Local Storage to view all saved data</p>
+            </div>
         </div>
     </section>
 
@@ -185,8 +190,9 @@
             <a href="#" aria-label="Twitter">tw</a>
             <a href="#" aria-label="Email">@</a>
         </div>
-        <p>&copy; 2024 Amara Raja. All rights reserved.</p>
+        <p>&copy; 2024 Professional Portfolio. All rights reserved.</p>
     </footer>
-        
+
+    <script src="script.js"></script>
 </body>
 </html>
